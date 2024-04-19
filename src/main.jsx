@@ -10,9 +10,11 @@ import {
 //Import pages
 import Error from './pages/Error.jsx'
 import About from './pages/About.jsx'
+import Portfolio from './pages/Portfolio.jsx'
+import Contact from './pages/Contact.jsx'
+import Resume from './pages/Resume.jsx'
 
-
-//Create the in-browser router
+//Create the in-browser routes
 const router = createBrowserRouter([
   {
     path:'/',
@@ -22,7 +24,19 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <About />
-      }
+      },
+      {
+        path: '/Portfolio',
+        element: <Portfolio />
+      },
+      {
+        path: '/Contact',
+        element: <Contact />
+      },
+      {
+        path: '/Resume',
+        element: <Resume />
+      },
     ]
   }
 ])
@@ -30,7 +44,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router}/>
-    {/* <App /> */}
   </React.StrictMode>,
 )
 
