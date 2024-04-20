@@ -7,6 +7,9 @@ import {
   RouterProvider,
 } from "react-router-dom"
 
+//Import the bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 //Import pages
 import Error from './pages/Error.jsx'
 import About from './pages/About.jsx'
