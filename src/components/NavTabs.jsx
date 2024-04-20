@@ -5,6 +5,7 @@ function NavTabs() {
 
     return (
         <ul className='nav nav-tabs'>
+            <h1>Travis Umbel</h1>
             <li className='nav-item'>
                 <Link
                     to='/'
