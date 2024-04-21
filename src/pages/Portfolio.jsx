@@ -1,4 +1,11 @@
 import Card from '../components/Project'
+//Import images
+import journeyJot from '../assets/images/Journey-Jot.png'
+import trailerFinder from '../assets/images/Trailer-Finder.png'
+import weatherApp from '../assets/images/Weather-App.png'
+import calculator from '../assets/images/calculator.png'
+import sketchpad from '../assets/images/sketchpad.png'
+import admin from '../assets/images/admin.png'
 
 export default function Portfolio() {
     return (
@@ -6,40 +13,40 @@ export default function Portfolio() {
         <h1>Portfolio Page</h1>
         <div className = 'container d-flex flex-wrap justify-content-evenly'>
           <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='JourneyJot' 
+            subtitle ='Mysql2, express, tailwind, sequelize, openai' 
+            image = {journeyJot}
+            link = 'https://github.com/Umbelth94/JourneyJot' 
             />
             <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='Trailer Finder' 
+            subtitle ='Javascript, HTML, TMDB Api, Foundation CSS Framework' 
+            image = {trailerFinder}
+            link = 'https://github.com/Umbelth94/Movie-Merch-App' 
             />
             <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='Weather App' 
+            subtitle ='Javascript, HTML, Bootstrap, Openweather API' 
+            image = {weatherApp}
+            link = 'https://github.com/Umbelth94/Weather-App?tab=readme-ov-file' 
             />
             <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='Calculator' 
+            subtitle ='JS, CSS, HTML' 
+            image = {calculator}
+            link = 'https://github.com/Umbelth94/Odin_Calculator' 
             />
             <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='Sketchpad' 
+            subtitle ='JS, CSS, HTML' 
+            image = {sketchpad}
+            link = 'https://github.com/Umbelth94/Sketchpad' 
             />
             <Card 
-            title ='Boom' 
-            subtitle ='baby' 
-            image = 'https://placehold.co/600x400'
-            link = 'https://github.com/Umbelth94/Portfolio-Page' 
+            title ='Admin Dashboard' 
+            subtitle ='HTML, CSS Grid, CSS Flexbox' 
+            image = {admin}
+            link = 'https://github.com/Umbelth94/AdminDashboard' 
             />
           </div>
       </div>
