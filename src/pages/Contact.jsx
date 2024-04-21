@@ -8,6 +8,7 @@ export default function Contact() {
     const [message, setMessage] = useState('');
     const [nameError, setNameError] = useState('');
     const [emailError, setEmailError] = useState('');
+    const [messageError, setMessageError] = useState('');
 
     const handleNameChange = (e) => {
         setName(e.target.value);
@@ -27,11 +28,22 @@ export default function Contact() {
         }
     };
 
+    const handleMessageChange = (e) => {
+        setMessage(e.target.value);
+        if (!e.target.value.trim()) {
+            setMessageError('Message is required');
+        } else {
+            setMessageError('');
+        }
+    }
+
     const handleBlur = (e) => {
         if (!e.target.value.trim() && e.target.id === 'name') {
             setNameError('Name is required');
         } else if (!/\S+@\S+\.\S+/.test(e.target.value) && e.target.id === 'email') {
             setEmailError('Invalid email address');
+        } else if (!e.target.value.trim() && e.target.id === 'message') {
+            setMessageError('Message is required')
         }
     };
 
@@ -52,7 +64,7 @@ export default function Contact() {
                         onChange = {handleNameChange}
                         onBlur = {handleBlur} 
                     />
-                    {nameError && <div className="error">{nameError}</div>}
+                    
                 </div>
                 <div className='form-group'>
                     <label htmlFor='email'>Email</label>
@@ -65,7 +77,6 @@ export default function Contact() {
                         onChange={handleEmailChange}
                         onBlur={handleBlur}
                     />
-                    {emailError && <div className="error">{emailError}</div>}
                 </div>
                 <div className='form-group'>
                     <label htmlFor="textArea">Message: </label>
@@ -76,8 +87,14 @@ export default function Contact() {
                         cols='30'
                         rows='10'
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        onChange={handleMessageChange}
+                        onBlur={handleBlur}
                     ></textarea>
+                </div>
+                <div>
+                {nameError && <div className="error">{nameError}</div>}
+                {emailError && <div className="error">{emailError}</div>}
+                {messageError && <div className="error">{messageError}</div>}
                 </div>
             </form>
         <button 
