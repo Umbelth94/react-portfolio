@@ -10,7 +10,7 @@ import admin from '../assets/images/admin.png'
 export default function Portfolio() {
     return (
       <div className = 'container-fluid content'>
-        <h1>Portfolio Page</h1>
+        <h2>Portfolio Page</h2>
         <h3>Click on the title for the deployed link, and the descriptions for the repo</h3>
         <div className = 'container d-flex flex-wrap justify-content-evenly'>
           <Card 
