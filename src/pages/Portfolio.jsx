@@ -12,7 +12,7 @@ export default function Portfolio() {
       <div className = 'container-fluid content'>
         <h2>Portfolio Page</h2>
         <h3>Click on the title for the deployed link, and the descriptions for the repo</h3>
-        <div className = 'container d-flex flex-wrap justify-content-evenly'>
+        <div className = 'container d-flex flex-wrap justify-content-evenly '>
           <Card 
             title ='JourneyJot' 
             subtitle ='Mysql2, express, tailwind, sequelize, openai' 

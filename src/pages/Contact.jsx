@@ -100,6 +100,8 @@ export default function Contact() {
         <button 
         className = 'btn btn-primary'
         onClick={clicked}>Submit</button>
+        <p>Email: Umbelth94@gmail.com</p>
+        <p>Phone: (262)492-5905</p>
         </div>
     )
 }

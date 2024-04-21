@@ -5,7 +5,7 @@ export default function About() {
     return (
         <div className = 'container-fluid content'>
             <h2>About me</h2>
-            <img src={picture}></img>
+            <img src={picture} className='profile-pic'></img>
             <p>
                 My name is Travis Umbel.  I'm currently fresh out of the UW-Madison web development bootcamp and I am trying to make my way into the world of web development.  I currently live in Madison Wisconsin, and on weekends you'll find me camping, disc golfing, making music with my friends, or hiking wherever I can find lots of trees.  If the weather is bad, then I'll be gaming online or working on some small side projects.  Hopefully you will hear about them soon!  
             </p>
