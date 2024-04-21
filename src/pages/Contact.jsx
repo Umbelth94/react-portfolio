@@ -35,10 +35,14 @@ export default function Contact() {
         }
     };
 
+    const clicked = () => {
+        alert('This button currently does nothing');
+    }
+
     return (
         <div className = 'container-fluid content'>
             <h2>Contact Me</h2>
-            <form>
+            <form className = 'my-3'>
                 <div className= 'form-group'>
                     <label htmlFor='name'>Full Name</label>
                     <input 
@@ -76,6 +80,9 @@ export default function Contact() {
                     ></textarea>
                 </div>
             </form>
+        <button 
+        className = 'btn btn-primary'
+        onClick={clicked}>Submit</button>
         </div>
     )
 }
